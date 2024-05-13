@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App{
+    background-color: aqua;
+    width: 100%;
+
+}
+.nav{
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-gap:3px;
+}
+
+.nav label{
+    color: aliceblue;
+    position: absolute;
+    top: -10000000px;
+}
+
+#search{
+    width: 100%;
+    border-radius: 20px;
+    padding: 0px 5px;
+    border: 1px gray solid;
+}
+#search:active{
+    width: 100%;
+    border-radius: 20px;
+    padding: 0px 5px;
+    border: 1px gray solid;
+}
+
+#moves{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#home{
+    display: inherit;
+    color: aqua;
+    list-style: none;
+    text-decoration: none;
+    padding: 0px 4px;
+}
+#post{
+    display: inherit;
+    color: aqua;
+    list-style: none;
+    text-decoration: none;
+    padding: 0px 4px;
+}
+#about{
+    display: inherit;
+    color: aqua;
+    list-style: none;
+    text-decoration: none;
+    padding: 0px 4px;
+}
+#home:focus-within {
+    background-color: aqua;
+    border: 1px solid white;
+    border-bottom: 2px solid aqua;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    padding: 0px 4px;
+}
+#post:focus-within {
+    padding: 0px 4px;
+    color: black;
+    list-style: none;
+    border: 1px solid white;
+    border-bottom: 2px solid aqua;
+    text-decoration: none;
+    background-color: aqua;
+}
+#about:focus-within{
+    padding: 0px 4px;
+    color: black;
+    list-style: none;
+    border: 1px solid white;
+    border-bottom: 2px solid aqua;
+    text-decoration: none;
+    background-color: aqua;
+}
+
+#home:hover {
+    background-color: rgba(21, 8, 8, 0.612);
+    border-bottom: 2px solid aqua;
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 0px 4px;
+    list-style: none;
+}
+#post:hover{
+    list-style: none;
+    padding: 0px 4px;
+    color: antiquewhite;
+    border-bottom: 2px solid aqua;
+    text-decoration: none;
+    background-color: rgba(21, 8, 8, 0.612);
+}
+#about:hover{
+    padding: 0px 4px;
+    color: antiquewhite;
+    border-bottom: 2px solid aqua;
+    text-decoration: none;
+    background-color: rgba(21, 8, 8, 0.612);
+    list-style: none;
+}
+
+.post{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    gap: 5px;
+    padding: 2px 0px;
+    border-bottom: 1px solid black;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 5px;
+    
+}
+.postdt{
+    color: black;
+    text-decoration: none;
+    font-size: .3rem;
+
+}
+
+#postt{
+    color: blueviolet;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.postbody{
+    font-size: 12px;
+}
+
+img{
+    margin-top: 15px;
+    float: left;
+    width: 50px;
+    height: 50px;
+    border: 2px double blue;
+}
+
+.donate{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    background-color: green;
+    border: 1.5px solid darkgreen;
+    height: 20px;
+    width: 50px;
+    padding: 2px;
+}
+.donate:hover{
+    background-color: rgb(17, 154, 17);
+}
+.Newpost h2{
+    color: rgba(26, 3, 3, 0.69);
+    font-size: 1.3rem;
+}
+.newpostform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.newpostform label{
+    color: aqua;
+}
+
+.newpostform button{
+    display: flex;
+    justify-content: center;
+    
+    width: 50px;
+}
+.about{
+    height: 100vh;
+}
+.footer{
+    background-color: blueviolet;
+    border-bottom: 5px solid aqua;
+    font-size: .6rem;
+    text-align: center;
+}
+
+.donat{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(34, 6, 196);
+    border: 1.5px solid rgb(66, 6, 151);
+    height: 20px;
+    width: 50px;
+    padding: 2px;
+}
+.donat:hover{
+    background-color: rgb(23, 92, 210);
+}
+#libtn{
+    text-decoration: none;
+}
+#moves{
+    list-style: none;
+}
+
+
+@media only screen and (max-width: 200px) {
+    .App{
+        background-color: aqua;
+        width: 100%;
+    
+    }
+    .nav{
+        width: 100%;
+        background-color: black;
+        display: grid;
+        grid-gap:3px;
+    }
+    
+    .nav label{
+        color: aliceblue;
+        position: absolute;
+        top: -10000000px;
+    }
+    
+    #search{
+        width: 100%;
+        border-radius: 20px;
+        padding: 0px 5px;
+        border: 1px gray solid;
+    }
+    #search:active{
+        width: 100%;
+        border-radius: 20px;
+        padding: 0px 5px;
+        border: 1px gray solid;
+    }
+    
+    #moves{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #home{
+        display: inherit;
+        color: aqua;
+        list-style: none;
+        text-decoration: none;
+        padding: 0px 4px;
+    }
+    #post{
+        display: inherit;
+        color: aqua;
+        list-style: none;
+        text-decoration: none;
+        padding: 0px 4px;
+    }
+    #about{
+        display: inherit;
+        color: aqua;
+        list-style: none;
+        text-decoration: none;
+        padding: 0px 4px;
+    }
+    #home:focus-within {
+        background-color: aqua;
+        border: 1px solid white;
+        border-bottom: 2px solid aqua;
+        color: black;
+        list-style: none;
+        text-decoration: none;
+        padding: 0px 4px;
+    }
+    #post:focus-within {
+        padding: 0px 4px;
+        color: black;
+        list-style: none;
+        border: 1px solid white;
+        border-bottom: 2px solid aqua;
+        text-decoration: none;
+        background-color: aqua;
+    }
+    #about:focus-within{
+        padding: 0px 4px;
+        color: black;
+        list-style: none;
+        border: 1px solid white;
+        border-bottom: 2px solid aqua;
+        text-decoration: none;
+        background-color: aqua;
+    }
+    
+    #home:hover {
+        background-color: rgba(21, 8, 8, 0.612);
+        border-bottom: 2px solid aqua;
+        color: antiquewhite;
+        text-decoration: none;
+        padding: 0px 4px;
+        list-style: none;
+    }
+    #post:hover{
+        list-style: none;
+        padding: 0px 4px;
+        color: antiquewhite;
+        border-bottom: 2px solid aqua;
+        text-decoration: none;
+        background-color: rgba(21, 8, 8, 0.612);
+    }
+    #about:hover{
+        padding: 0px 4px;
+        color: antiquewhite;
+        border-bottom: 2px solid aqua;
+        text-decoration: none;
+        background-color: rgba(21, 8, 8, 0.612);
+        list-style: none;
+    }
+    
+    .post{
+        background-color: aqua;
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        gap: 5px;
+        padding: 2px 0px;
+        border-bottom: 1px solid black;
+    }
+    .news{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-top: 5px;
+        
+    }
+    .postdt{
+        color: black;
+        text-decoration: none;
+        font-size: .3rem;
+    
+    }
+    
+    #postt{
+        color: blueviolet;
+        text-decoration: none;
+        font-size: 0.8rem;
+    }
+    
+    .postbody{
+        font-size: 9px;
+    }
+    
+    img{
+        margin-top: 15px;
+        float: left;
+        width: 30px;
+        height: 30px;
+        border: 2px double blue;
+    }
+    
+    .donate{
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        font-size: 8px;
+        background-color: green;
+        border: 1.5px solid darkgreen;
+        height: 20px;
+        width: 30px;
+        padding: 2px;
+    }
+    .donate:hover{
+        background-color: rgb(17, 154, 17);
+    }
+    .Newpost h2{
+        color: rgba(26, 3, 3, 0.69);
+        font-size: 1.3rem;
+    }
+    .newpostform{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .newpostform label{
+        color: aqua;
+    }
+    #postTitle{
+        border: 1px gray solid;
+        width: 80%;
+    }
+    #postBody{
+        border: 1px gray solid;
+        width: 90%;
+    }
+    #uploading{
+        width: 80%;
+    }
+    
+    .newpostform button{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(3, 201, 211);
+        border: 1px solid blue;
+        width: 50px;
+        margin-top: 10px;
+    }
+    .about{
+        height: 100vh;
+    }
+    .footer{
+        background-color: blueviolet;
+        border-bottom: 5px solid aqua;
+        font-size: .6rem;
+        text-align: center;
+    }
+    
+    .donat{
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        background-color: rgb(34, 6, 196);
+        border: 1.5px solid rgb(66, 6, 151);
+        height: 20px;
+        width: 50px;
+        padding: 2px;
+    }
+    .donat:hover{
+        background-color: rgb(23, 92, 210);
+    }
+    #libtn{
+        font-size: 8px;
+        align-items: center;
+        width: 30px;
+    }
+    
+}
